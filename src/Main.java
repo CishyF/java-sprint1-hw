@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    //private final static Scanner scanner = new Scanner(System.in);
+    private final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        StepTracker tracker = new StepTracker(scanner);
 
         while (true) {
             printMenu();
@@ -15,7 +15,7 @@ public class Main {
 
             switch (command) {
                 case 1:
-                    System.out.println("1");
+                    tracker.addNewNumberStepsPerDay();
                     break;
                 case 2:
                     System.out.println("2");

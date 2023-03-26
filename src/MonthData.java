@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class MonthData {
+public class MonthData {
+    int[] days = new int[30];
 }
