@@ -16,19 +16,22 @@ public class Main {
             switch (command) {
                 case 1:
                     tracker.addNewNumberStepsPerDay();
+                    System.out.println();
                     break;
                 case 2:
-                    System.out.println("2");
+                    tracker.changeStepGoal();
+                    System.out.println();
                     break;
                 case 3:
-                    System.out.println("3");
+                    tracker.printStatistic();
+                    System.out.println();
                     break;
                 case 0:
-                    System.out.println("0");
                     scanner.close();
                     return;
                 default:
                     System.out.println("Вы ввели несуществующую команду, попробуйте снова");
+                    System.out.println();
             }
         }
     }
@@ -41,5 +44,6 @@ public class Main {
                       "0 - Выход.";
 
         System.out.println(menu);
+        System.out.println();
     }
 }
