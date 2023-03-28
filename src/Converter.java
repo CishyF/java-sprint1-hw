@@ -1,12 +1,13 @@
 public class Converter {
 
+    private static final double STEP_LENGTH_KILOMETERS = 0.00075;
+    private static final double STEP_COST_KILOCALORIES = 0.05;
+
     public int convertToKm(int steps) {
-        double stepToKm = 0.00075;
-        return (int) (steps * stepToKm);
+        return (int) (steps * STEP_LENGTH_KILOMETERS);
     }
 
     public int convertToKilocalories(int steps) {
-        double stepToKilocalorie = 0.05;
-        return (int) (steps * stepToKilocalorie);
+        return (int) (steps * STEP_COST_KILOCALORIES);
     }
 }
